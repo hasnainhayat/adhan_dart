@@ -268,7 +268,7 @@ class PrayerTimes {
     } else if (date.isAfter(this.fajr!)) {
       return Prayer.Fajr;
     } else {
-      return Prayer.IshaBefore;
+      return Prayer.Isha;;
     }
   }
 
@@ -276,9 +276,7 @@ class PrayerTimes {
     if (date == null) {
       date = DateTime.now();
     }
-    if (date.isAfter(this.isha!)) {
-      return Prayer.FajrAfter;
-    } else if (date.isAfter(this.maghrib!)) {
+   if (date.isAfter(this.maghrib!)) {
       return Prayer.Isha;
     } else if (date.isAfter(this.asr!)) {
       return Prayer.Maghrib;
